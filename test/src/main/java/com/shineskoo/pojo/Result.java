@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 
 /**
- * Date: 2020/5/20
- * Author: ShinesKoo
+ * Date: 2021/1/15 11:06 上午
+ * Author: Cosmos
  * Desc: 封装后端返回给前端结果的实体类
  */
 public class Result implements Serializable {

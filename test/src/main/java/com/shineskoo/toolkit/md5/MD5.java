@@ -13,7 +13,7 @@ public class MD5 {
     /**
      * MD5加密(String)
      */
-    public String Encrypt(String toEncrypt) throws NoSuchAlgorithmException, UnsupportedEncodingException {
+    public String Encrypt(String toEncrypt) {
         //确定计算方法
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");
@@ -24,10 +24,12 @@ public class MD5 {
             StringBuffer buf = new StringBuffer("");
             for (int offset = 0; offset < b.length; offset++) {
                 i = b[offset];
-                if (i < 0)
+                if (i < 0) {
                     i += 256;
-                if (i < 16)
+                }
+                if (i < 16) {
                     buf.append("0");
+                }
                 buf.append(Integer.toHexString(i));
             }
             //32位加密
@@ -54,10 +56,12 @@ public class MD5 {
             StringBuffer buf = new StringBuffer("");
             for (int offset = 0; offset < b.length; offset++) {
                 i = b[offset];
-                if (i < 0)
+                if (i < 0) {
                     i += 256;
-                if (i < 16)
+                }
+                if (i < 16) {
                     buf.append("0");
+                }
                 buf.append(Integer.toHexString(i));
             }
             //32位加密

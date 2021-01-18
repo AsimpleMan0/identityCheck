@@ -2,8 +2,8 @@ package com.shineskoo.pojo;
 
 
 /**
- * Date: 2020/5/20
- * Author: ShinesKoo
+ * Date: 2021/1/15 11:06 上午
+ * Author: Cosmos
  * Desc: 存放后端返回给前端返回码的常量类
  */
 public class StatusCode {

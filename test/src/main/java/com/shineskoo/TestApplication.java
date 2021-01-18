@@ -1,11 +1,10 @@
 package com.shineskoo;
 
-import com.shineskoo.toolkit.JwtTokenUtil;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.shineskoo")
 public class TestApplication {
 
     public static void main(String[] args) {

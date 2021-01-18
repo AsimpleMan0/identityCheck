@@ -1,26 +1,20 @@
 package com.shineskoo.dao;
 
 import org.apache.ibatis.annotations.Mapper;
-
-import java.util.HashMap;
-import java.util.List;
+import org.springframework.stereotype.Repository;
 
 /**
- * Date: 2020/5/20
- * Author: ShinesKoo
+ * Date: 2021/1/15 11:06 上午
+ * Author: Cosmos
  * Desc: 数据访问层(DAL)
  */
 @Mapper
+@Repository
 public interface UserMapper {
 
-    int deleteByPrimaryKey(String userId);
+    String selectByAccount(String account);
 
+    String findPass(String account);
 
-    String selectByPrimaryKey(String userId);
-
-    /**
-     * 查询数据库的userID跟token
-     */
-    List<String> selectUserIDAndToken(HashMap<String, Object> map);
-
+    String findIP(String account);
 }
